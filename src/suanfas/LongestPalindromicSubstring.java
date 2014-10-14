@@ -152,46 +152,9 @@ public class LongestPalindromicSubstring {
     		
     	}
     	
-    	//System.out.print(s.substring(m, n+1));
+    	return s.substring(m, n+1);  	
     	
-    	return s.substring(m, n+1);
-    	
-    	
-    }
-    
-//    private int[] helper (int i, int j, int len) {
-//    	int[] res = new int[2];
-//		int left = i;
-//		int right = i;
-//		
-//		
-//    	
-//    	
-//    	
-//    	return res;
-//    }
-//	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+    }	
 	
 	
 	

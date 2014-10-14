@@ -6,7 +6,7 @@ public class MedianofTwoSortedArrays {
 	
 	
 	/**  
-	 * 2011-03-27
+	 * 2014-10-14
 	 * 
 	 * There are two sorted arrays A and B of size m and n respectively. Find the median of 
 	 * the two sorted arrays. The overall run time complexity should be O(log (m+n)).
@@ -20,8 +20,12 @@ public class MedianofTwoSortedArrays {
 	 * 
 	 * #2. run time O(m+n), space O(1), by using pre and last two external storage
 	 * 
+	 * #3. run time O(lg(m+n)), space O(1), binary search, find kth smallest element in two sorted arrays
+	 * 										if odd number, return the kth
+	 * 										if even number, return ( kth + (k+1)th ) / 2	
 	 * 
-	 * #3. run time O(lg(m+n)), space O(1), binary search
+	 * #Reference - http://www.acmerblog.com/leetcode-median-of-two-sorted-arrays-5330.html									
+	 * 
 	 * 
 	 */
 	 public static double findMedianSortedArrays (int A[], int B[]) {
@@ -70,7 +74,6 @@ public class MedianofTwoSortedArrays {
 	 }	
  
 	 
-	 // suppose B is the bigger array
 	 public static double findMedianSortedArrays2 (int A[], int B[]) {
 		 
 		 int i = 0;
@@ -129,7 +132,6 @@ public class MedianofTwoSortedArrays {
 		
 //		int A[] = {1,3};
 //		int B[] = {1};
-		
 		
 		//System.out.println(findMedianSortedArrays(A, B));
 		
