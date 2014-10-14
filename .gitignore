@@ -1,0 +1,16 @@
+#binary
+*.class
+#xslt report
+reports/
+#testng output
+surefire-reports/
+#target
+target/
+#.project
+.project
+#.classpath
+.classpath
+#eclipse settings
+.settings/
+#testng-report
+test-output/
